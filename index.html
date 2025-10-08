@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de viaje a Oporto: amigos en ruta</title>
+    <title>Plan de Viaje a Oporto: Amigos en Ruta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Warm Neutrals -->
@@ -50,25 +50,48 @@
                 <div class="flex-shrink-0">
                     <h1 class="text-xl font-bold text-gray-800">🇵🇹 Oporto 2025</h1>
                 </div>
+                <!-- Desktop Menu -->
                 <div class="hidden sm:block">
-                    <div class="flex items-baseline space-x-4">
+                    <div class="ml-10 flex items-baseline space-x-4">
                         <button data-target="overview" class="nav-button active px-3 py-2 text-sm font-semibold">Visión General</button>
                         <button data-target="itinerary" class="nav-button px-3 py-2 text-sm font-semibold">Plan de Viaje</button>
                         <button data-target="gastronomy" class="nav-button px-3 py-2 text-sm font-semibold">Gastronomía</button>
                         <button data-target="map" class="nav-button px-3 py-2 text-sm font-semibold">Mapa</button>
                     </div>
                 </div>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex sm:hidden">
+                    <button id="mobile-menu-button" type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
+
+        <!-- Mobile Menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <button data-target="overview" class="mobile-nav-button active block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-orange-50">Visión General</button>
+                <button data-target="itinerary" class="mobile-nav-button block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-orange-50">Plan de Viaje</button>
+                <button data-target="gastronomy" class="mobile-nav-button block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-orange-50">Gastronomía</button>
+                <button data-target="map" class="mobile-nav-button block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-orange-50">Mapa</button>
+            </div>
+        </div>
     </header>
 
     <main class="container mx-auto p-4 sm:p-6 lg:p-8">
         
         <section id="overview" class="content-section active">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 leading-tight">¡Viveiro Mola! - Escapada a Oporto</h2>
-                <p class="mt-4 text-lg text-gray-600">23 al 26 de octubre de 2025</p>
-                <p class="mt-2 text-md text-gray-500">Para Dani, Moni, Ali y Juanma</p>
+                <h2 class="text-3xl font-bold text-gray-900 leading-tight">Escapada a Oporto: ¡El plan definitivo!</h2>
+                <p class="mt-4 text-lg text-gray-600">Del 23 al 26 de Octubre de 2025</p>
+                <p class="mt-2 text-md text-gray-500">Para Juanma, Alicia, Dani y Mónica</p>
             </div>
 
             <div class="mb-12">
@@ -108,21 +131,21 @@
                     <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">Día 1: Jueves 23 | Llegada y Corazón Histórico</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1599691030239-a05a8b502573?q=80&w=800&auto=format&fit=crop" alt="Estación de São Bento" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Estación+São+Bento" alt="Azulejos en la Estación de São Bento" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Tarde: São Bento y la Catedral</h4>
                                 <p class="text-sm">Tras el check-in, inmersión total en la historia de Oporto visitando los impresionantes azulejos de la Estación de São Bento y las vistas desde la Catedral (Sé).</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1563632364858-399084e72a44?q=80&w=800&auto=format&fit=crop" alt="Ribeira de Oporto al atardecer" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Ribeira+al+Atardecer" alt="Ribeira de Oporto al atardecer" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Atardecer: Magia en la Ribeira</h4>
                                 <p class="text-sm">Paseo por la orilla del Duero mientras el sol se pone sobre el Puente Don Luis I. El ambiente, los colores y la música callejera os cautivarán.</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1669931709425-46e2938f3f82?q=80&w=800&auto=format&fit=crop" alt="Restaurante tradicional en Oporto" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Cena+Tradicional" alt="Restaurante tradicional en Oporto" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Noche: Cena Auténtica</h4>
                                 <p class="text-sm">Cena en la Ribeira. Reservad en <strong>Taberna dos Mercadores</strong> o <strong>Adega São Nicolau</strong> para una primera velada portuguesa inolvidable.</p>
@@ -135,21 +158,21 @@
                     <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">Día 2: Viernes 24 | Cultura, Arte y Copas con Glamour</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1621022372251-8a623ad99cb4?q=80&w=800&auto=format&fit=crop" alt="Torre de los Clérigos" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Torre+dos+Clérigos" alt="Torre de los Clérigos" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Mañana: Lello y Vistas desde Clérigos</h4>
                                 <p class="text-sm">Visita a la mágica <strong>Livraria Lello</strong> (entradas online) y subida a la <strong>Torre dos Clérigos</strong> para disfrutar de las mejores vistas de Oporto. ¡Imprescindible!</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1626242521194-a1548f0607a7?q=80&w=800&auto=format&fit=crop" alt="Bocadillo de Pernil" class="w-full h-40 object-cover">
+                           <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Bocadillo+de+Pernil" alt="Bocadillo de Pernil" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Comida: El Sabor de Oporto</h4>
                                 <p class="text-sm">Comida informal en <strong>Casa Guedes</strong>. Su bocadillo de pernil con queso da Serra es una institución en la ciudad. ¡Simple y delicioso!</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1582119425995-c1d49454a3a6?q=80&w=800&auto=format&fit=crop" alt="Cóctel elegante" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Cóctel+Elegante" alt="Cóctel elegante" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Noche: Cena y Cócteles Sofisticados</h4>
                                 <p class="text-sm">Cena de autor en <strong>Cantinho do Avillez</strong>. Después, poned el broche a la noche con una copa en <strong>Royal Cocktail Club</strong>, el lugar perfecto para Mónica, Alicia, Dani y Juanma.</p>
@@ -162,21 +185,21 @@
                     <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">Día 3: Sábado 25 | Vino de Oporto y la Francesinha Definitiva</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1534951474653-a5b821427151?q=80&w=800&auto=format&fit=crop" alt="Bodegas de vino en Vila Nova de Gaia" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Bodegas+de+Gaia" alt="Bodegas de vino en Vila Nova de Gaia" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Mañana: Cruzar a Gaia y sus Bodegas</h4>
                                 <p class="text-sm">Paseo por la parte alta del puente hasta Gaia para una visita guiada con cata en bodegas como <strong>Graham's</strong> o <strong>Taylor's</strong>. ¡Reservad online!</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1598515598552-335352c3c932?q=80&w=800&auto=format&fit=crop" alt="Francesinha" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Francesinha" alt="Francesinha" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Noche: El Templo de la Francesinha</h4>
                                 <p class="text-sm">Es la noche de probar el plato estrella de Oporto. Cena en <strong>Brasão Cervejaria</strong>, el lugar de referencia. Acompañadla con sus cervezas artesanales. ¡Reservad sí o sí!</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1568913809961-0027f3542222?q=80&w=800&auto=format&fit=crop" alt="Paseo en barco por el Duero" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Crucero+6+Puentes" alt="Paseo en barco por el Duero" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Tarde: Crucero de los 6 Puentes</h4>
                                 <p class="text-sm">Tras comer en Gaia (opción de lujo: <strong>Vinum</strong>), un relajante paseo en barco por el Duero para admirar la ciudad desde el agua.</p>
@@ -189,21 +212,21 @@
                     <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">Día 4: Domingo 26 | Brisa del Atlántico y Despedida</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1628813936692-a7d09252382c?q=80&w=800&auto=format&fit=crop" alt="Tranvía histórico de Oporto" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Tranvía+a+Foz" alt="Tranvía histórico de Oporto" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Mañana: Tranvía histórico a Foz</h4>
                                 <p class="text-sm">Un encantador viaje en el tranvía nº1 bordeando el Duero hasta su desembocadura. Pasead por la zona del faro y sentid la brisa del océano.</p>
                             </div>
                         </div>
                          <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1604135691890-5f2231267417?q=80&w=800&auto=format&fit=crop" alt="Pescado a la parrilla" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Pescado+Fresco" alt="Pescado a la parrilla" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Comida: Homenaje de Pescado</h4>
                                 <p class="text-sm">Despedida gastronómica en <strong>Matosinhos</strong>. Disfrutad del mejor pescado y marisco fresco a la parrilla en restaurantes como <strong>O Gaveto</strong>.</p>
                             </div>
                         </div>
                         <div class="card overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1678822453185-697c6a16b96e?q=80&w=800&auto=format&fit=crop" alt="Mercado do Bolhão" class="w-full h-40 object-cover">
+                            <img src="https://placehold.co/800x400/FFF0E5/D35400?text=Mercado+do+Bolhão" alt="Mercado do Bolhão" class="w-full h-40 object-cover">
                             <div class="p-4">
                                 <h4 class="font-bold">Tarde: Últimas compras y regreso</h4>
                                 <p class="text-sm">Una visita rápida al renovado <strong>Mercado do Bolhão</strong> antes de emprender el viaje de vuelta a Madrid con recuerdos inolvidables.</p>
@@ -221,42 +244,42 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                  <div class="card flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1598515598552-335352c3c932?q=80&w=800&auto=format&fit=crop" alt="Francesinha" class="w-full h-48 object-cover rounded-t-lg">
+                    <img src="https://placehold.co/800x600/FFF0E5/D35400?text=Francesinha" alt="Francesinha" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-5 flex-grow">
                         <h4 class="font-bold text-xl mb-2">Francesinha</h4>
                         <p class="text-gray-700">El plato más icónico. Capas de carne, embutidos, queso fundido y una salsa secreta. <br><strong>Dónde:</strong> <span class="font-bold text-orange-700">Brasão Cervejaria</span> o <span class="font-bold text-orange-700">Café Santiago</span>.</p>
                     </div>
                 </div>
                 <div class="card flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1626242521194-a1548f0607a7?q=80&w=800&auto=format&fit=crop" alt="Bocadillo de Pernil" class="w-full h-48 object-cover rounded-t-lg">
+                    <img src="https://placehold.co/800x600/FFF0E5/D35400?text=Bocadillo+de+Pernil" alt="Bocadillo de Pernil" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-5 flex-grow">
                         <h4 class="font-bold text-xl mb-2">Bocadillo de Pernil</h4>
                         <p class="text-gray-700">Carne de cerdo asada lentamente, tierna y sabrosa, en un pan crujiente. Con queso da Serra es sublime. <br><strong>Dónde:</strong> <span class="font-bold text-orange-700">Casa Guedes</span>.</p>
                     </div>
                 </div>
                 <div class="card flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1604135691890-5f2231267417?q=80&w=800&auto=format&fit=crop" alt="Pescado a la parrilla" class="w-full h-48 object-cover rounded-t-lg">
+                    <img src="https://placehold.co/800x600/FFF0E5/D35400?text=Pescado+a+la+Parrilla" alt="Pescado a la parrilla" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-5 flex-grow">
                         <h4 class="font-bold text-xl mb-2">Pescado y Marisco Fresco</h4>
                         <p class="text-gray-700">La proximidad al Atlántico garantiza un producto de calidad excepcional, simplemente hecho a la parrilla. <br><strong>Dónde:</strong> En <strong>Matosinhos</strong> (ej. <span class="font-bold text-orange-700">O Gaveto</span>).</p>
                     </div>
                 </div>
                  <div class="card flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1625938144028-14470386a3e1?q=80&w=800&auto=format&fit=crop" alt="Pastel de Nata" class="w-full h-48 object-cover rounded-t-lg">
+                    <img src="https://placehold.co/800x600/FFF0E5/D35400?text=Pastel+de+Nata" alt="Pastel de Nata" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-5 flex-grow">
                         <h4 class="font-bold text-xl mb-2">Pastel de Nata</h4>
                         <p class="text-gray-700">El dulce portugués por excelencia. Hojaldre crujiente y crema tostada. Tomadlo en cualquier momento del día. <br><strong>Dónde:</strong> <span class="font-bold text-orange-700">Manteigaria</span> o <span class="font-bold text-orange-700">Fábrica da Nata</span>.</p>
                     </div>
                 </div>
                 <div class="card flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1590339942713-332e90a8de47?q=80&w=800&auto=format&fit=crop" alt="Cocina de autor" class="w-full h-48 object-cover rounded-t-lg">
+                    <img src="https://placehold.co/800x600/FFF0E5/D35400?text=Cocina+de+Autor" alt="Cocina de autor" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-5 flex-grow">
                         <h4 class="font-bold text-xl mb-2">Cocina de Autor</h4>
                         <p class="text-gray-700">Para una experiencia más elevada, probad la cocina moderna con raíces portuguesas. <br><strong>Dónde:</strong> <span class="font-bold text-orange-700">Cantinho do Avillez</span> o el lujoso <span class="font-bold text-orange-700">DOP</span>.</p>
                     </div>
                 </div>
                 <div class="card flex flex-col">
-                    <img src="https://images.unsplash.com/photo-1552329309-84693a13a7a6?q=80&w=800&auto=format&fit=crop" alt="Vino de Oporto" class="w-full h-48 object-cover rounded-t-lg">
+                    <img src="https://placehold.co/800x600/FFF0E5/D35400?text=Vinho+do+Porto" alt="Vino de Oporto" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-5 flex-grow">
                         <h4 class="font-bold text-xl mb-2">Vinho do Porto</h4>
                         <p class="text-gray-700">El alma de la ciudad. No os vayáis sin probar las diferentes variedades (Tawny, Ruby, White...). <br><strong>Dónde:</strong> En las bodegas de Gaia como <span class="font-bold text-orange-700">Graham's</span> o <span class="font-bold text-orange-700">Taylor's</span>.</p>
@@ -319,57 +342,49 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const navButtons = document.querySelectorAll('.nav-button');
+            // --- Navigation Logic ---
+            const allNavButtons = document.querySelectorAll('.nav-button, .mobile-nav-button');
             const contentSections = document.querySelectorAll('.content-section');
+            const mobileMenu = document.getElementById('mobile-menu');
 
             function switchTab(targetId) {
+                // Switch content
                 contentSections.forEach(section => {
-                    section.classList.remove('active');
-                    if (section.id === targetId) {
-                        section.classList.add('active');
-                    }
+                    section.classList.toggle('active', section.id === targetId);
                 });
 
-                navButtons.forEach(button => {
-                    button.classList.remove('active');
-                    if (button.dataset.target === targetId) {
-                        button.classList.add('active');
-                    }
+                // Update active state for all buttons
+                allNavButtons.forEach(button => {
+                    button.classList.toggle('active', button.dataset.target === targetId);
                 });
+
+                // Scroll to top and hide mobile menu
                 window.scrollTo(0, 0);
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    const [openIcon, closeIcon] = document.getElementById('mobile-menu-button').querySelectorAll('svg');
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
             }
 
-            navButtons.forEach(button => {
+            allNavButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    const targetId = button.dataset.target;
-                    switchTab(targetId);
+                    switchTab(button.dataset.target);
                 });
             });
 
-            // Basic mobile navigation
-            const mobileNav = document.querySelector('.sm\\:hidden');
-            if(mobileNav) {
-              const menuButton = document.createElement('button');
-              menuButton.innerHTML = 'Menú';
-              menuButton.className = 'text-gray-700 font-semibold p-2';
-              const menu = document.querySelector('.hidden.sm\\:block .flex');
-              const newMenu = menu.cloneNode(true);
-              newMenu.className = 'flex flex-col absolute bg-white shadow-md rounded-lg p-2 top-16 right-4 hidden';
-              document.querySelector('nav .container').appendChild(newMenu);
-              document.querySelector('nav .container').appendChild(menuButton);
-              
-              menuButton.addEventListener('click', () => {
-                  newMenu.classList.toggle('hidden');
-              });
-
-              newMenu.querySelectorAll('.nav-button').forEach(button => {
-                   button.addEventListener('click', () => {
-                    const targetId = button.dataset.target;
-                    switchTab(targetId);
-                    newMenu.classList.add('hidden');
-                });
-              });
-            }
+            // --- Mobile Menu Toggle Logic ---
+            const menuButton = document.getElementById('mobile-menu-button');
+            menuButton.addEventListener('click', () => {
+                const [openIcon, closeIcon] = menuButton.querySelectorAll('svg');
+                mobileMenu.classList.toggle('hidden');
+                openIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+            
+            // Set initial active button
+            switchTab('overview');
         });
     </script>
 </body>
