@@ -24,14 +24,16 @@
             border-bottom-color: #D35400;
             color: #D35400;
         }
-        .content-section {
-            display: none;
-			pointer-events: none;
-        }
-        .content-section.active {
-            display: block;
-			pointer-events: auto;
-        }
+		.content-section {
+ 			display: none;
+ 			visibility: hidden;
+  			opacity: 0;
+		}
+		.content-section.active {
+    		display: block;
+    		visibility: visible;
+    		opacity: 1;
+		}
         .card {
             background-color: #FFFFFF;
             border-radius: 0.75rem;
